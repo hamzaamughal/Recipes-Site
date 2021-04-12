@@ -26,11 +26,10 @@ const AllRecipes = () => {
     const { allContentfulRecipe: { nodes: recipes } } = useStaticQuery(query)
     // const recipes = data.allContentfulRecipe.nodes
     return (
-        <div>
-            <h3>All recipes </h3>
+        <section className="recipes-container">
             <TagsList recipes={recipes} />
             <RecipesList recipes={recipes} />
-        </div>
+        </section>
     )
 }
 
